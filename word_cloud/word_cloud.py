@@ -83,11 +83,13 @@ def main():
         stop_words = stopwords.words('english')
     
         # Convert ignore words from user to lower case
-        ignore_words_lower = [x.lower() for x in ignore_words]
-        
-        # Combine all the words to be ignored
-        all_ignored_words = punctuations + stop_words + ignore_words_lower
-        
+        if ignore_words is not None:
+            ignore_words_lower = [x.lower() for x in ignore_words]
+            # Combine all the words to be ignored
+            all_ignored_words = punctuations + stop_words + ignore_words_lower
+        else:
+            all_ignored_words = punctuations + stop_words
+            
         # Get the keywords list
         keywords = [word for word in tokens \
                         if  word.lower() not in all_ignored_words
