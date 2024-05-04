@@ -45,7 +45,7 @@ Run the word_cloud script from the command line with the following arguments:
                             Specify the main colour of the text
       -m MAX_WORDS, --max_words MAX_WORDS
                             Set the number of words allowed in the final output
-      --dpi DPI             Set the number of words allowed in the final output
+      --dpi DPI             Set the DPI of the final output
       -o OUTPUT, --output OUTPUT
                             File name for output png
 
