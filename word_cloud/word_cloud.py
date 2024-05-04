@@ -121,7 +121,7 @@ def main():
             mask =None
         wordcloud = WordCloud(background_color=bg, max_words=maximum_words, colormap=cmap,mask=mask, 
                               stopwords=STOPWORDS, max_font_size=maximum_font_size,contour_width=0.,contour_color='gray',
-                              random_state=random_state, relative_scaling=0.2,
+                              random_state=random_state,font_path=font_path, relative_scaling=0.2,
                               width=width, height=height).generate_from_frequencies(word_could_dict)
         
         plt.figure(figsize=(fig_w,fig_h))
