@@ -21,7 +21,7 @@ def main():
     parser.add_argument("-l", "--logo", help="Specify the logo to be used to mask")
     parser.add_argument("-c", "--colour", help="Specify the main colour of the text",nargs=2,default=['purple','black'])
     parser.add_argument("-m", "--max_words", help="Set the number of words allowed in the final output",default=3500)
-    parser.add_argument("--dpi", help="Set the number of words allowed in the final output",default=200)
+    parser.add_argument("--dpi", help="Set the DPI of the final output",default=200)
     parser.add_argument("-o", "--output", help="File name for output png",default='word_cloud.png')
     
     
